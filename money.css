@@ -1,0 +1,334 @@
+    body {
+        margin: 0;
+        width: 100vw;
+        min-width: 6500px;
+        align-items: center;
+        justify-content: stretch;
+    }
+    
+    nav {
+        height: 15%;
+        background-color: rgba(40, 47, 70, 0.986);
+    }
+    
+    .navbar-brand {
+        width: 10%;
+    }
+    
+    h1 {
+        color: #45db0a69;
+    }
+    
+    input {
+        max-height: 30px;
+    }
+    
+    .home,
+    .about {
+        color: #45db0a69
+    }
+    
+    main {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        align-items: center;
+        justify-content: stretch;
+    }
+    
+    .home-currencies {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        background-image: url("https://costlycoins.co.uk/wp-content/uploads/2020/01/why-are-coins-not-made-of-pure-copper-scaled.jpg");
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-size: cover;
+        overflow: scroll;
+        justify-content: stretch;
+    }
+    
+    .row {
+        padding-top: 5%;
+        padding-bottom: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card {
+        margin-left: 1%;
+        margin-bottom: 1%;
+        background: rgb(35, 174, 6);
+        background: linear-gradient(90deg, rgba(35, 174, 6, 1) 32%, rgba(5, 147, 35, 1) 71%);
+        -webkit-box-shadow: 17px 6px 17px -8px rgba(14, 15, 14, 1);
+        -moz-box-shadow: 17px 6px 17px -8px rgba(14, 15, 14, 1);
+        box-shadow: 17px 6px 17px -8px rgba(14, 15, 14, 1);
+    }
+    
+    .loader1 {
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -60%);
+    }
+    
+    .gif1 {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .loader2 {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -60%);
+    }
+    
+    .gif2 {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked+.slider {
+        background-color: #2196F3;
+    }
+    
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    
+    .card-text {
+        display: block;
+        position: relative;
+        margin-top: 0;
+        padding-bottom: 20%;
+    }
+    
+    .card-body {
+        display: grid;
+    }
+    
+    .info {
+        position: relative;
+        color: yellow;
+        margin-bottom: -5%;
+        align-self: flex-end;
+        justify-self: left;
+    }
+    
+    .show {
+        margin-top: 20px;
+    }
+    
+    img {
+        width: 20px;
+    }
+    
+    .modal-content {
+        width: 350px;
+        height: 350px;
+        background-color: chartreuse;
+        position: absolute;
+    }
+    
+    .modal-title {
+        display: block;
+    }
+    
+    .modal-text {
+        height: 20px;
+        padding-bottom: 2px;
+    }
+    
+    .art {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://cdn.britannica.com/50/24350-050-FF2AC072/oil-Bordighera-canvas-Claude-Monet-Art-Institute-1884.jpg");
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    
+    .display-4 {
+        color: rgba(92, 7, 7, 0.836);
+        font-family: 'Marck Script', cursive;
+        margin-left: 2%;
+        font-weight: bolder;
+        padding-top: -20%;
+        align-items: flex-start;
+        display: flex;
+        margin-top: -2%;
+    }
+    
+    .text {
+        align-self: center;
+    }
+    
+    .brahms,
+    .brahmsVid,
+    .adagio,
+    .adagioVid {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .brahms h4,
+    .adagio h4 {
+        display: flex;
+        justify-content: center;
+        font-size: bolder;
+        background-color: rgba(36, 221, 212, 0.61);
+        opacity: .7;
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    
+    @media only screen and (min-width: 1200px) {
+        .display-4 {
+            margin-top: 3%;
+        }
+        .row {
+            margin-top: 3%;
+        }
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        .art {
+            overflow: auto;
+            padding-bottom: 5%;
+        }
+        .display-4 {
+            margin-top: 10%;
+        }
+        .brahms,
+        .adagio {
+            padding-left: 3%;
+        }
+        .row {
+            margin-top: 15%;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .art {
+            overflow: auto;
+            padding-bottom: 5%;
+        }
+        .display-4 {
+            padding-top: 5%;
+        }
+        .brahms,
+        .adagio {
+            padding-left: 3%;
+        }
+        .row {
+            margin-top: 30%;
+        }
+        h1 {
+            font-size: 35px;
+        }
+        nav {
+            height: 18%;
+        }
+        footer {
+            visibility: hidden;
+        }
+    }
+    
+    @media only screen and (max-width: 376px) {
+        .art {
+            overflow: auto;
+            padding-bottom: 5%;
+        }
+        .display-4 {
+            padding-top: 7%;
+        }
+        .brahms,
+        .adagio {
+            padding-left: 3%;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .navbar-brand {
+            display: inline-block;
+        }
+        input {
+            height: 28px;
+            width: 130px
+        }
+        .row {
+            margin-top: 35%;
+        }
+        footer {
+            visibility: hidden;
+        }
+    }
+    
+    footer {
+        height: 6vh;
+        font-size: 10px;
+        color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(40, 47, 70, 0.986);
+    }
